@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ITM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/agency.min.css" rel="stylesheet">
+        <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+    
+        input[type=submit] {
+          margin-left:5%;
+          
+          background-color: #fed136;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        input[type=number], select {
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=button] {
+          margin-left:5%;
+          width: 30%;
+          background-color: #fed136;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+       input[type=submit]:hover {
+         background-color: grey;
+       }
+       input[type=button]:hover {
+         background-color: grey;
+       }
+
+       div.formasset {
+         border-radius: 5px;
+         background-color: #f2f2f2;
+         padding: 20px;
+       }
+     </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="margin-left: 1%">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger ">IT Asset Management</a>
+      </div>
+    </nav>
+
+    <!-- Daftar Asset -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Form Tanah</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="formasset">
+              <form>
+                <label for="fname">Nama Pemilik Tanah</label>
+                <input type="text" id="fname" name="firstname" placeholder="Nama Pemilik Tanah">
+
+                <label for="fname">Kode Sertifikat Tanah</label>
+                <input type="text" id="fname" name="firstname" placeholder="Nama Pemilik Tanah">
+
+                <label for="lname">Tempat, Tanggal Lahir</label>
+                <input type="text" id="lname" name="lastname" placeholder="Tempat, Tanggal Lahir">
+
+                <label for="lname">Pekerjaan</label>
+                <input type="text" id="lname" name="lastname" placeholder="Pekerjaan">
+
+                <label for="lname">Alamat Detai (Pemilik)</label>
+                <input type="text" id="lname" name="lastname" placeholder="Tempat Tinggal">
+
+                <label for="lname">Kelurahan / Desa</label>
+                <input type="text" id="lname" name="lastname" placeholder="Kelurahan / Desa">
+
+                <label for="lname">Kecamatan</label>
+                <input type="text" id="lname" name="lastname" placeholder="Kecamatan">
+
+                <label for="lname">Kabupaten / Kota</label>
+                <input type="text" id="lname" name="lastname" placeholder="Kabupaten / Kota">
+
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                  <label for="lname">Luas (Panjang(cm) X Lebar(cm))</label>
+                  <br>
+                  <input type="number" id="lname" name="lastname" placeholder="Panjang" style="width: 30%">
+                  <label> X </label>
+                  <input type="number" id="lname" name="lastname" placeholder="Lebar" style="width: 30%">
+                  <label> = </label>
+                  <input type="number" id="lname" name="lastname" placeholder="Luas" style="width: 30%" disabled="">
+                  </div>
+                  <div class="col-md-2"></div>
+                </div>
+                <br>
+                
+
+                <label for="lname">Dipergunakan Sebagai</label>
+                <select id="country" name="tanah">
+                  <option value="tanahp">Tempat tinggal</option>
+                  <option value="tanahp">Kantor</option>
+                  <option value="tanahp">bla</option>
+                  <option value="tanahp">bla</option>
+                  <option value="tanahp">bla</option>
+                  <option value="tanahp">bla</option>
+                </select>
+
+                <br>
+                <label for="lname">Dengan batas-batas sebagai berikut:</label><br>
+                <label for="lname">Sebelah utara berbatasan dengan tanah:</label>
+                <input type="text" id="lname" name="lastname" placeholder="perbatasan utara">
+
+                <label for="lname">Sebelah selatan berbatasan dengan tanah:</label>
+                <input type="text" id="lname" name="lastname" placeholder="perbatasan selatan">
+
+                <label for="lname">Sebelah Timur berbatasan dengan tanah:</label>
+                <input type="text" id="lname" name="lastname" placeholder="perbatasan timur">
+
+                <label for="lname">Sebelah barat berbatasan dengan tanah:</label>
+                <input type="text" id="lname" name="lastname" placeholder="perbatasan barat">
+
+                <input type="submit" value="Input Gambar" style="width: 30%">
+              
+                <div style="display:flex; align-items:flex-center;justify-content:center; margin-top:10% ">
+                    <div> 
+                      <input type="submit" value="Submit" style="width: 100%;">
+                    </div>
+                    <div style="margin-left:4%;"> 
+                      <input type="button" value="Cancel" onclick="history.back()" style="width:100%">
+                    </div>
+                    
+                </div>
+                
+              </form>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        
+      </div>
+    </section>
+
+
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="../../js/jqBootstrapValidation.js"></script>
+    <script src="../../js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../js/agency.min.js"></script>
+
+  </body>
+
+</html>

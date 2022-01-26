@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login User</title>
+		<link rel="stylesheet" href="Login_/styleloginuser.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	</head>
+	<body class="responsive">
+		<div class="loginBox">
+			<img src="Login_/user.png" class="user" alt="Nature">
+			<h2>Login</h2>
+			<form>
+				<p>Email Address</p>
+				<input type="text" name="" placeholder="Enter Email" id="usern">
+				<p>Acces key</p>
+				<input type="Password" placeholder="Password" id="pword">
+				<!-- <input type="submit" name="" value="Sign In" onclick="cek()"> -->
+				<button type="button" onclick="cek()" class="btn btn-dark btn-primary center-block" >Sign In</button>
+			</form>
+		</div>
+
+		<script>
+		var obj = [
+			{
+				usern: "wasd",
+				pword: "wasd"
+			},
+			{
+				usern: "admin",
+				pword: "admin"
+			}
+		]
+
+		function cek(){
+			var usern = document.getElementById("usern").value
+			var pword = document.getElementById("pword").value
+
+			for(var i =0 ; i<obj.length; i++){
+				if(usern == obj[i].usern && pword == obj[i].pword){
+					window.location.href = 'ERP/index_asli.html'
+					return
+				}
+				else{
+		 		
+		 		}
+			}
+			alert("Acces denied !!!");
+			
+		}
+
+		// 	function cek(){
+		// 	if(document.getElementById("usern").value=="admin" && document.getElementById("pword").value=="admin"){
+		// 		window.location.href = 'www.google.com'
+		// 		return
+		// 	}
+		// 	else{
+		// 		alert("Acces denied !!!");
+		// 	}
+		// }
+		</script>
+
+		<!-- Latest compiled and minified CSS -->
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
